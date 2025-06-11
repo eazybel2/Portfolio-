@@ -1,0 +1,98 @@
+/*--------------------- Responsive (Start) ---------------------*/
+@media (max-width: 991px){
+    html{
+        font-size: 55%;
+    }
+}
+
+@media (max-width: 768px){
+    header #menu-btn{
+        display: block;
+      } 
+  
+      .header .navbar{
+        width: 30rem;
+        position: absolute;
+        right: 0; 
+        top:100%;
+        padding: 0rem 2rem;
+        background: rgba(0, 0, 0, 0.8); /* Semi-transparent dark teal background */
+        -webkit-backdrop-filter: blur(10px); /* Blur effect for Safari */
+        backdrop-filter: blur(10px); /* Blur effect */
+        border: 0.1rem solid #BC8CF2;
+        -webkit-transition: 0.2s linear;
+        -moz-transition: 0.2s linear;
+        -o-transition: 0.2s linear;
+        transition: 0.2s linear;
+        -webkit-transform: translateX(100%);
+        transform: translateX(100%);
+        height: calc(100vh - 6rem);
+        overflow-y: auto;
+        -webkit-box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+        box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+    }
+  
+    .header .navbar.active{
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+    }
+  
+    .header .navbar a{
+        display: block;
+        color: #ffffff; /* White color for better contrast */
+        padding: 1.5rem 0;
+        margin: 1rem 0;
+        text-decoration: none; /* Remove underline */
+        font-weight: 500; /* Slightly bold for readability */
+    }
+
+    .header .navbar a:hover {
+        color: #FE9C00; /* Gold color for hover effect */
+    }
+  
+    .navbar::-webkit-scrollbar{
+        width: 0.8rem;
+    }
+  
+    .navbar::-webkit-scrollbar-thumb{
+        border-radius: 1rem;
+        background-color: #BC8CF2;
+    }
+  
+    .navbar::-webkit-scrollbar-track{
+        background: transparent;
+    }
+
+    section, header{
+        padding: 2rem;
+    }
+
+    .open-popup-btn {
+        display: inline-block;
+        color: #ffffff; /* White text */
+        padding: 1rem 2rem;
+        border-radius: 0.5rem;
+        font-weight: 600;
+        text-transform: uppercase;
+        text-decoration: none;
+        transition: background-color 0.3s ease, color 0.3s ease;
+    }
+
+}
+
+@media (max-width: 450px){
+    html{
+        font-size: 50%;
+    }
+
+    section, header{
+        padding: 1rem;
+    }
+
+    .header .navbar {
+        width: 60%; /* Ensure the navbar fits smaller screens */
+    }
+
+}
+
+/*--------------------- Responsive (End) ---------------------*/
